@@ -27,6 +27,16 @@
 *	Finally, the LPT and RPT are rejoined, and a Final Permutation (FP) is performed on the newly combined block.
 *	The result of this process produces the desired 64-bit ciphertext.
 
+#### DES Modes of Operation
+
+* Electronic Codebook (ECB). Each 64-bit block is encrypted and decrypted independently
+* Cipher Block Chaining (CBC). Each 64-bit block depends on the previous one and uses an Initialization Vector (IV)
+*	Cipher Feedback (CFB). The preceding ciphertext becomes the input for the encryption algorithm, producing pseudorandom output, which in turn is XORed with plaintext, building the next ciphertext unit
+*	Output Feedback (OFB). Much like CFB, except that the encryption algorithm input is the output from the preceding DES
+*	Counter (CTR). Each plaintext block is XORed with an encrypted counter. The counter is then incremented for each subsequent block
+
+
+
 
 
 
