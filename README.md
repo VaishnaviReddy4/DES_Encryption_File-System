@@ -1,17 +1,17 @@
 #### A Data Encryption Standard for a File System
 
-#### **Objectives**
+>* #### **Objectives**
 * Understanding the need of data security and integrity to be included during design of distributed operating system. 
 * Types of cryptography modules used by different operating system store data and authorize users.
 * Implement a file encryption technique using DES for the windows platform.
 * Comparing the time and space aspects of decrypted file and encrypted file.
 
-#### **Modules**
+>* #### **Modules**
 * A block cipher takes a block of plaintext bits and generates a block of ciphertext bits, generally of same size. The size of block is fixed in the given scheme. The choice of block size does not directly affect to the strength of encryption scheme. The strength of cipher depends up on the key length.
 
 * Feistel Cipher is not a specific scheme of block cipher. It is a design model from which many different block ciphers are derived. DES is just one example of a Feistel Cipher. A cryptographic system based on Feistel cipher structure uses the same algorithm for both encryption and decryption.  
 
-#### **How algorithm works?**
+>* #### **How algorithm works?**
 
 * The process begins with the 64-bit plain text block getting handed over to an initial permutation (IP) function.
 * The initial permutation (IP) is then performed on the plain text.
@@ -27,7 +27,7 @@
 *	Finally, the LPT and RPT are rejoined, and a Final Permutation (FP) is performed on the newly combined block.
 *	The result of this process produces the desired 64-bit ciphertext.
 
-#### DES Modes of Operation
+>* #### **DES Modes of Operation**
 
 * Electronic Codebook (ECB). Each 64-bit block is encrypted and decrypted independently
 * Cipher Block Chaining (CBC). Each 64-bit block depends on the previous one and uses an Initialization Vector (IV)
