@@ -13,19 +13,19 @@
 
 >* #### **How algorithm works?**
 
-•	The process begins with the 64-bit plain text block getting handed over to an initial permutation (IP) function.
-•	The initial permutation (IP) is then performed on the plain text.
-•	Next, the initial permutation (IP) creates two halves of the permuted block, referred to as Left Plain Text (LPT) and Right Plain Text (RPT).
-•	Each LPT and RPT goes through 16 rounds of the encryption process.
-•	The encryption process (16 rounds) is further broken down into five stages:
-•	Key transformation
-•	Expansion permutation
-•	S-Box permutation
-•	P-Box permutation
-•	XOR and swap
-•	For decryption, we use the same algorithm, and we reverse the order of the 16 round keys.
-•	Finally, the LPT and RPT are rejoined, and a Final Permutation (FP) is performed on the newly combined block.
-•	The result of this process produces the desired 64-bit ciphertext.
+* The process begins with the 64-bit plain text block getting handed over to an initial permutation (IP) function.
+* The initial permutation (IP) is then performed on the plain text.
+*  Next, the initial permutation (IP) creates two halves of the permuted block, referred to as Left Plain Text (LPT) and Right Plain Text (RPT).
+*  Each LPT and RPT goes through 16 rounds of the encryption process.
+*  The encryption process (16 rounds) is further broken down into five stages:
+    *  Key transformation
+    *  Expansion permutation
+    * S-Box permutation
+    * P-Box permutation
+    * XOR and swap
+*	For decryption, we use the same algorithm, and we reverse the order of the 16 round keys.
+*	Finally, the LPT and RPT are rejoined, and a Final Permutation (FP) is performed on the newly combined block.
+*	The result of this process produces the desired 64-bit ciphertext.
 
 
 
